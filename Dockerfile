@@ -18,8 +18,6 @@ COPY --from=build /home/gradle/project/build/libs/kakao-0.0.1-SNAPSHOT.jar .
 
 USER nobody
 
-EXPOSE 8080
-
-ENV DATABASE_URL=jdbc:mariadb://localhost:3306/kakao
+EXPOSE 3000
 
 CMD ["java", "-jar", "kakao-0.0.1-SNAPSHOT.jar"]
