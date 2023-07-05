@@ -20,4 +20,4 @@ USER nobody
 
 EXPOSE 3000
 
-CMD ["java", "-DsocksProxyHost=krmp-proxy.9rum.cc", "-DsocksProxyPort=3128", "-jar", "kakao-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-DsocksProxyHost=krmp-proxy.9rum.cc", "-DsocksProxyPort=3128", "-DsocksProxySet=true", "-jar", "kakao-0.0.1-SNAPSHOT.jar"]
